@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Me</title>
+    <link rel="stylesheet" href="hiremecss.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Profile Picture Above the Title -->
+        <div class="profile-picture">
+            <img src="image/profile.png" alt="My Photo">
+        </div>
+
+        <h2 id="title">Contact Me</h2>
+        <br><br>
+        <label class="switch">
+            <input type="checkbox" id="toggle">
+            <span class="slider"></span>
+        </label>
+        <div class="social-buttons" id="social-buttons" style="display:none;">
+            <a href="https://wa.me/+628131211073?text=Bilang saja mau bikin apa ya atau mau tanya tanya juga boleh!" target="_blank" class="social-btn">WhatsApp</a>
+            <br>
+            <a href="https://t.me/Fikcoy" target="_blank" class="social-btn">Telegram</a>
+            <br>
+            <a href="index.html" class="social-btn">My Portfolio</a>
+        </div>
+    </div>
+
+    <script>
+        const toggle = document.getElementById('toggle');
+        const socialButtons = document.getElementById('social-buttons');
+
+        toggle.addEventListener('change', function() {
+            if (this.checked) {
+                socialButtons.style.display = 'block';
+            } else {
+                socialButtons.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
